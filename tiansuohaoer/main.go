@@ -37,7 +37,7 @@ type I233 struct {
 	Type  string
 	Child *I233
 }
-type I233identify interface {
+type I233classify interface {
 	IsGay() bool
 }
 
