@@ -32,14 +32,16 @@ func Isxianbeigay(sex I233) I233 {
 	}
 }
 
-type I233 struct {
-	Sex   int
-	Type  string
-	Child *I233
-}
-type I233classify interface {
-	IsGay() bool
-}
+type (
+	I233 struct {
+		Sex   int
+		Type  string
+		Child *I233
+	}
+	I233classify interface {
+		IsGay() bool
+	}
+)
 
 func (it *I233) IsGay() bool {
 	if it.Type == "NotGay" {
